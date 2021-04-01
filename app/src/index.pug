@@ -1,0 +1,224 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title FigmaLand
+    link(rel="stylesheet" href="./library/fontawesome/css/all.min.css")
+    link(rel="stylesheet" href="./css/style.min.css")
+  body
+    main.main
+      .intro
+        .intro__inner
+          include ./components/header.pug
+          .intro__content
+            .container-xl
+              h1.intro__title The best products start with Figma
+              p.intro__subtitle Most calendars are designed for teams. Slate is designed for freelancers
+              a(href="#!").default-btn Try For Free
+      section.features
+        .container-xl 
+          .features__inner
+            .features__header
+              h3.default-title Features
+              p.default-subtitle Most calendars are designed for teams. Slate is designed for freelancers
+            .features__content-wrapper
+              .features__content
+                .features__col
+                  .features__col-inner
+                    svg.features__col-icon.features__col-fonts
+                      use(xlink:href="img/svg/sprite.svg#features-fonts")
+                    h6.features__col-title OpenType features Variable fonts
+                    p.features__col-text Slate helps you see how many more days you need to work to reach your financial goal.
+                .features__col
+                  svg.features__col-icon.features__col-design
+                    use(xlink:href='img/svg/sprite.svg#features-design')
+                  h6.features__col-title Design with real data
+                  p.features__col-text Slate helps you see how many more days you need to work to reach your financial goal.
+                .features__col
+                  svg.features__col-icon.features__col-action
+                    use(xlink:href='img/svg/sprite.svg#features-action')
+                  h6.features__col-title Fastest way to take action
+                  p.features__col-text Slate helps you see how many more days you need to work to reach your financial goal.
+              .features__video-wrapper
+                .features__video
+                  button.features__btn
+                    svg.features__btn-icon
+                      use(xlink:href="./img/svg/sprite.svg#play")
+                  video.features__video-pleer(src="minions.mp4" poster="")
+                  input.features__video-progress(value="0" max="100" type="range")
+                  .features__video-buttons
+                    button.features__video-play
+                      i.fas.fa-play 
+                    button.features__video-pause
+                      i.fas.fa-pause
+                    button.features__video-stop
+                      i.fas.fa-stop
+                    button.features__video-speed-down
+                      i.fas.fa-chevron-double-left
+                    button.features__video-speed-up
+                      i.fas.fa-chevron-double-right
+                    button.features__video-duration 00:00/00:00
+                    button.features__video-sound-wrapper
+                      span.features__video-sound
+                        i.fas.fa-volume-up
+                      input.features__video-volume(type="range" min=0 max=100)
+                    i.fas.fa-expand-wide.features__video-fullscreen
+  section.organize
+    .container-xl
+      .organize__inner
+        .organize__content
+          h3.organize__title.default-title Fastest way to organize
+          p.organize__subtitle.default-subtitle Most calendars are designed for teams. Slate is designed for freelancers
+          a(href="#!").organize__btn.default-btn Try For Free 
+        .organize__img
+          img(src="./img/organize-img.webp" alt="")
+  section.proto
+    .container-xl
+      .proto__inner
+        .proto__img
+          img(src="./img/proto-img.webp" alt="")
+        .proto__content
+          h6.proto__suptitle At your fingertips
+          h3.default-title.proto__title Lightning fast prototyping
+        form.proto__form(action="")
+          h6.proto__form-title Subscribe to our Newsletter
+          p.proto__form-subtitle Available exclusivery on Figmaland
+          input.proto__form-input(type="text" placeholder="Your Email")
+          input.proto__form-btn.default-btn(type="submit" value="Subscribe")
+  section.partners
+    .container-xl
+      .partners__inner
+        .partners__header
+          h3.default-title Partners
+          p.default-subtitle Most calendars are designed for teams. Slate is designed for freelancers
+        .partners__content
+          .partners__col
+            p Client Name
+            img(src="./img/partners-google.webp" alt="Google")
+          .partners__col
+            p Client Name
+            img(src="./img/partners-amazon.webp" alt="Google")
+          .partners__col
+            p Client Name
+            img(src="./img/partners-microsoft.webp" alt="Google")
+          .partners__col
+            p Client Name
+            img(src="./img/partners-uber.webp" alt="Google")
+          .partners__col
+            p Client Name
+            img(src="./img/partners-dropbox.webp" alt="Google")
+          .partners__col
+            p Client Name
+            img(src="./img/partners-google.webp" alt="Google")
+          .partners__col
+            p Client Name
+            img(src="./img/partners-uber.webp" alt="Google")
+          .partners__col
+            p Client Name
+            img(src="./img/partners-amazon.webp" alt="Google")
+        a(href="#!").default-btn Try For Free
+  section.testimonials
+    .container-xl
+      .testimonials__inner
+        h3.default-title Testimonials
+        img.testimonials__img(src="./img/ibm.webp" alt="")
+        p.default-subtitle Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.
+        .testimonials__user
+          img(src="./img/testimonials-user.webp" alt="user")
+          span Organize across<br> Ui designer
+        a(href="#!").default-btn More Testimonials 
+  section.pricing
+    .container-xl
+      .pricing__inner
+        .pricing__header
+          h3.default-title.pricing__title Pricing
+          p.default-subtitle.pricing__subtitle Most calendars are designed for teams. Slate is designed for freelancers
+        .pricing__content
+          .pricing__card
+            h2.pricing__card-title Free
+            p.pricing__card-subtitle Organize across all apps by hand
+            .pricing__card-price
+              span.pricing__card-num 0
+              div.pricing__card-time
+                span $
+                p Per Month
+            p.pricing__features Pricing Feature
+            p.pricing__features Pricing Feature
+            p.pricing__features Pricing Feature
+            p.pricing__features Pricing Feature
+            a.default-btn(href="#!") Order Now 
+          .pricing__card
+            h2.pricing__card-title STANDARD
+            p.pricing__card-subtitle Organize across all apps by hand
+            .pricing__card-price
+              span.pricing__card-num 10
+              div.pricing__card-time
+                span $
+                p Per Month
+            p.pricing__features Pricing Feature
+            p.pricing__features Pricing Feature
+            p.pricing__features Pricing Feature
+            p.pricing__features Pricing Feature
+            a.default-btn(href="#!") Order Now 
+          .pricing__card
+            h2.pricing__card-title business
+            p.pricing__card-subtitle Organize across all apps by hand
+            .pricing__card-price
+              span.pricing__card-num 99
+              div.pricing__card-time
+                span $
+                p Per Month
+            p.pricing__features Pricing Feature
+            p.pricing__features Pricing Feature
+            p.pricing__features Pricing Feature
+            p.pricing__features Pricing Feature
+            a.default-btn(href="#!") Order Now 
+  section.contact
+    .container-xl
+      .contact__inner
+        .contact__header
+          h3.default-title Contact Us
+          p.default-subtitle Most calendars are designed for teams. Slate is designed for freelancers
+        .contact__content
+          form.contact__form
+            h4.contact__form-title Contact Us
+            input.contact__form-input(type="text" placeholder="Your Name")
+            input.contact__form-input(type="text" placeholder="Your Email")
+            textarea.contact__form-textarea(placeholder="Your Message")
+            input.default-btn(type="submit" value="Send")
+          .contact__content-info
+            .contact__content-address
+              .contact__content-col
+                svg.contact__content-col-icon.contact__content-col-map
+                  use(xlink:href="img/svg/sprite.svg#map")
+                p 6386 Spring St undefined Anchorage, Georgia 12473 United States
+              .contact__content-col
+                svg.contact__content-col-icon.contact__content-col-phone
+                  use(xlink:href="img/svg/sprite.svg#phone")
+                p (843) 555-0130
+              .contact__content-col
+                svg.contact__content-col-icon.contact__content-col-envelope
+                  use(xlink:href="img/svg/sprite.svg#envelope")
+                p willie.jennings@example.com
+            .contact__content-map
+              iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7132.738672889379!2d69.20182319531364!3d41.26648572580726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8a1b0c46af65%3A0x82d1d0a1630a1413!2zUFJPV0VCLiDQptC10L3RgtGAINGB0L7QstGA0LXQvNC10L3QvdGL0YUg0L_RgNC-0YTQtdGB0YHQuNC5!5e0!3m2!1sen!2s!4v1616934019475!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy")
+            .contact__content-social
+              ul.contact__content-social-list
+                li.contact__content-social-item
+                  a(href="#!").contact__content-social-link
+                    svg.contact__content-social-icon
+                      use(xlink:href="img/svg/sprite.svg#twitter")
+                li.contact__content-social-item
+                  a(href="#!").contact__content-social-link
+                    svg.contact__content-social-icon
+                      use(xlink:href="img/svg/sprite.svg#facebook")
+                li.contact__content-social-item
+                  a(href="#!").contact__content-social-link
+                    svg.contact__content-social-icon
+                      use(xlink:href="img/svg/sprite.svg#linkedIn")
+  include ./components/footer.pug
+    .wrapper
+
+    script(src="./js/script.min.js") 

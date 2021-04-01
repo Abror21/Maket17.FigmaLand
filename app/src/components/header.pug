@@ -1,0 +1,31 @@
+header.header
+    .container-xl
+        .header__inner
+            .menu
+                span
+                span
+                span
+            nav.nav
+                .menu-close
+                    span &times;
+                -var links = ['Home', 'Product', 'Pricing', 'About', 'Contact']
+                ul.nav__list
+                    each link in links
+                        li.nav__item
+                            a(href="#!").nav__link=link
+                ul.header__socials-list
+                    li.header__socials-item
+                        a(href="#!").header__socials-link
+                            svg.header__socials-icon.header__socials-twitter
+                                use(xlink:href="img/svg/sprite.svg#twitter")
+                    li.header__socials-item
+                        a(href="#!").header__socials-link
+                            svg.header__socials-icon.header__socials-facebook
+                                use(xlink:href="img/svg/sprite.svg#facebook")
+                    li.header__socials-item
+                        a(href="#!").header__socials-link
+                            svg.header__socials-icon.header__socials-linkedIn
+                                use(xlink:href="img/svg/sprite.svg#linkedIn")
+            a(href="#!").header__link
+                img(src="./img/logo.webp", alt="Logo").header__logo
+

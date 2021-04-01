@@ -1,0 +1,45 @@
+footer.footer
+    .container-xl
+        .footer__inner
+            .footer__pages
+                h5.footer__title Pages
+                -var links = ['Home', 'Product', 'Pricing', 'About', 'Contact']
+                    ul.footer__list
+                        each link in links
+                            li.footer__item
+                                a(href="#!").footer__link=link 
+            .footer__tomothy
+                h5.footer__title Tomothy
+                -var links = ['Eleanor Edwards', 'Ted Robertson', 'Annette Russell', 'Jennie Mckinney', 'Gloria Richards']
+                    ul.footer__list
+                        each link in links
+                            li.footer__item
+                                a(href="#!").footer__link=link
+            .janeBlack
+                h5.footer__title Jane Black
+                -var links = ['Philip Jones', 'Product', 'Colleen Russell', 'Marvin Hawkins', 'Bruce Simmmons']
+                    ul.footer__list
+                        each link in links
+                            li.footer__item
+                                a(href="#!").footer__link=link
+            .footer__socials
+                a(href="#!").footer__socials-map
+                    svg
+                        use(xlink:href="./img/svg/sprite.svg#map")
+                    span 7480 Mockingbird Hill undefined
+                a(href="tel:2395550108").footer__socials-phone
+                    svg
+                        use(xlink:href="./img/svg/sprite.svg#phone")
+                    span (239) 555-0108
+                .footer__socials-socials
+                    a(href="#!")
+                        svg
+                            use(xlink:href="./img/svg/sprite.svg#twitter") 
+                    a(href="#!")
+                        svg
+                            use(xlink:href="./img/svg/sprite.svg#facebook") 
+                    a(href="#!")
+                        svg
+                            use(xlink:href="./img/svg/sprite.svg#linkedIn") 
+                
+            
